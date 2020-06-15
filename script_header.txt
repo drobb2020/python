@@ -1,4 +1,11 @@
-#    <one line to give the program's name and a brief idea of what it does.>
+# (bash #!/bin/bash) (python #!/usr/bin/python)
+#===============================================================================
+#
+#          FILE: <script_name>
+# 
+#         USAGE: <how to run the script>
+# 
+#   DESCRIPTION: <a short but meaningful purpose of the script>
 #
 #    Copyright (C) 2020  David Robb
 #
@@ -16,3 +23,15 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
+#       OPTIONS: ---
+#  REQUIREMENTS: ---
+#          BUGS: Report bugs to David Robb, david.robb@microfocus.com, 613-793-2281
+#         NOTES: ---
+#        AUTHOR: David Robb (DER), david.robb@microfocus.com
+#  CONTRIBUTORS: 
+#  ORGANIZATION: Micro Focus Software (Canada) Inc.
+#       CREATED: 
+#   LAST UDATED: 
+#       VERSION: 
+#     SCRIPT ID: 
+#===============================================================================
