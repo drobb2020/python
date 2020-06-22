@@ -1,0 +1,4 @@
+INFO:root:Time required for c:/Users/David/Music/ABBA/ABBA/04 S.O.S.mp3 = 0.009992599487304688
+INFO:root:Time required for c:/Users/David/Videos/Abigail/test.mov = 0.18295955657958984
+ERROR:root:[Errno 2] No such file or directory: 'c:/Users/David/Documents/imaginary_file.png'
+INFO:root:Time required for c:/Users/David/Documents/imaginary_file.png = 0.0
