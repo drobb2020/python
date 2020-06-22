@@ -9,6 +9,11 @@ The sources I'm using are all found on O'Reilly Learning:
 5. Python for Beginners: Learn Python Programming (Python 3), By Jason Cannon (Video)
 6. Python for Unix and Linux System Administration, By Noah Gift, Jeremy M. Jones (Book)
 7. Learning Python, By Mark Lutz (Hardcover book)
+8. Socratica on YouTube
+9. Tech with Tim on YouTube
+10. Coret Schafer on YouTube
+11. The Python Tutorial (https://docs.python.org/3.8/tutorial/index.html)
+
 
 These are all excellent resources.
 
