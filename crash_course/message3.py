@@ -9,7 +9,7 @@
 # print both of your lists to make sure the 
 # messages were moved correctly.
 
-def messages(messages_list, sent_messages_list):
+def send_messages(messages_list, sent_messages_list):
     """
     print a message from a list of messages
 
@@ -33,6 +33,6 @@ messages_list = ['The world is not flat!', 'Donald Trump is a bad President!', '
             'The world, and humanity will survive this virus too...!', 'Remember, the world is not flat, and the virus may have started in China, but it could have started anywhere!']
 sent_messages_list = []
 
-messages(messages_list, sent_messages_list)
+send_messages(messages_list, sent_messages_list)
 
 sent_messages(sent_messages_list)
