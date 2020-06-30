@@ -5,6 +5,7 @@
 """If condition is True, x = 1, else x = 0"""
 
 # condition = True
+import smtpd
 from getpass import getpass
 condition = False
 
@@ -159,7 +160,6 @@ print('Logging In...')
 and using the help function to find additional information."""
 # Using help
 # execute an import on a module
-import smtpd
 # now print the help - better in an interactive python terminal
 print(help(smtpd))
 

@@ -1,3 +1,5 @@
+# Crash Course
+# Exwecise 6.10 - modified favorite numbers
 '''More dictionary fun'''
 numbers = {
     'nick': 44,
