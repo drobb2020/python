@@ -22,6 +22,25 @@
 # Print the value of login_attempts to make sure it was 
 # incremented properly, and then call reset_login_attempts(). 
 # Print login_attempts again to make sure it was reset to 0.
+#
+# Exercise 9-7. Admin: 
+# An administrator is a special kind of user. 
+# 1. Write a class called Admin that inherits from the User class 
+# you wrote. 
+# Add an attribute called privileges, that stores a list of 
+# strings like "can add post", "can delete post", "can ban user", 
+# and so on. Write a method called show_privileges() 
+# that lists the administrator’s set of privileges. 
+# Create an instance of Admin, and call your method.
+# 
+# Exercise 9-8. Privileges: 
+# Write a separate Privileges class. 
+# The class should have one attribute, privileges, that stores a 
+# list of strings as described in Exercise 9-7. 
+# Move the show_privileges() method to this class. 
+# Make a Privileges instance as an attribute in the Admin class. 
+# Create a new instance of Admin and use your method to show 
+# its privileges.
 
 class User():
     """A exercise class for defining a user."""
@@ -43,7 +62,7 @@ class User():
         print(f"Experience: {self.experience} years")
 
     
-    def great_user(self):
+    def greet_user(self):
         """Greet the user"""
         print(f"Hello {self.first.title()} {self.last.title()}, welcome to Excession Systems.")
         print(f"Your {self.experience} years of experience will be a great benefit to the company.")
@@ -61,13 +80,43 @@ class User():
         print(f"Login attempts have been reset to {self.login_attempts}")
 
 
-new_user = User('david', 'robb', 'ottawa', 'solution support engineer', 22)
+class Priviledges():
+    """Priviledges granted to administrators"""
 
-new_user.profile()
-new_user.great_user()
-new_user.increment_login_attempts(1)
-new_user.increment_login_attempts(1)
-new_user.increment_login_attempts(1)
-new_user.increment_login_attempts(1)
-new_user.increment_login_attempts(1)
-new_user.reset_login_attempts()
+    def __init__(self, priviledges = ['- can add post', '- can delete post', '- can add user', '- can ban user', '- can edit post']):
+        #self.priviledges = ['- can add post', '- can delete post', '- can add user', '- can ban user', '- can edit post']
+        self.priviledges = priviledges
+
+    def show_priviledges(self):
+        print("As administrator you have the following priviledges:")
+        for priviledge in self.priviledges:
+            print(priviledge)
+
+
+class Admin(User):
+    """Special user class with additional rights"""
+
+    def __init__(self, first, last, location, profession, experience):
+        """Initialize attributes of the parent class."""
+        super().__init__(first, last, location, profession, experience)
+        self.priviledges = Priviledges()
+
+
+# new_user = User('david', 'robb', 'ottawa', 'solution support engineer', 22)
+
+# new_user.profile()
+# new_user.greet_user()
+# new_user.increment_login_attempts(1)
+# new_user.increment_login_attempts(1)
+# new_user.increment_login_attempts(1)
+# new_user.increment_login_attempts(1)
+# new_user.increment_login_attempts(1)
+# new_user.reset_login_attempts()
+# print("")
+
+admin_user = Admin('excession', 'administrator', 'ottawa', 'Network administrator', 50)
+
+admin_user.profile()
+admin_user.greet_user()
+admin_user.priviledges.show_priviledges()
+# admin_user.show_priviledges()
