@@ -16,7 +16,7 @@ colorama==0.4.3
 cycler==0.10.0
 decorator==4.4.2
 Delorean==1.0.0
-Django==3.0.6
+Django==3.0.7
 django-crispy-forms==1.9.1
 fire==0.3.1
 flake8==3.8.2
