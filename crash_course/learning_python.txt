@@ -1,0 +1,10 @@
+In python you can print a simple message to the screen.
+In python you can create lists of digits or words.
+In python you can do math calculations.
+In python you can create dictionaries.
+In python you can create tupels.
+In python you can use functions to manipulate data.
+In python you can write a class that contains multiple functions.
+In python you can read from a file.
+In python you can write an entire website with django.
+In python you can create a windows application.
