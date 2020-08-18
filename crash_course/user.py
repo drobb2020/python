@@ -47,5 +47,3 @@ class User():
         """reset the login_attempts to 0"""
         self.login_attempts = 0
         print(f"Login attempts have been reset to {self.login_attempts}")
-
-

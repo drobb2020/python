@@ -8,23 +8,17 @@
 # that any ticket matching these four numbers 
 # or letters wins a prize.
 
-import random
+from random import choice
 
-class Lottery():
-    """lottery simulator."""
-    def __init__(self):
-        self.list = (4, 10, 16, 24, 34, 58, 39, 22, 75, 61, 'd', 'a', 'v', 'e', 'r')
-    
-    def generate_combo(self):
-        self.value = 1+random.randrange(self.list)
-        return self.value
+possibilities = [4, 10, 16, 24, 34, 58, 39, 22, 75, 61, 'd', 'a', 'v', 'e', 'r']
 
-    def getValue(self):
-        return self.value
-    
+winning_ticket = []
 
-ticket = Lottery()
+print("Let's see what the winning ticket is today...")
 
-for n in range(4):
-    print('I you have the following combination of numbers and letters, you are a winner!')
-    print(ticket.generate_combo())
+while len(winning_ticket) <4:
+    random_draw = choice(possibilities)
+
+    if random_draw not in winning_ticket:
+        print(f" We pulled: {random_draw}!")
+        winning_ticket.append(random_draw)
