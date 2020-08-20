@@ -8,11 +8,12 @@
 # Call your function with at least three city-country 
 # pairs, and print the values that are returned.
 
-def city_country(city, country):
-    """Function to format a city and country into a neat string."""
-    c_c = (f"{city}, {country}")
-    return c_c.title()
+from city_functions import city_country
 
+# def city_country(city, country):
+#     """Function to format a city and country into a neat string."""
+#     c_c = (f"{city}, {country}")
+#     return c_c.title()
 
 while True:
     print("\nPlease provide a city and the country:")
@@ -23,6 +24,9 @@ while True:
     co_name = input("Country: ")
     if co_name == 'q':
         break
+    ci_pop = input("What is the population: ")
+    if ci_pop == 'q':
+        break
 
-    formatted_name = city_country(ci_name, co_name)
+    formatted_name = city_country(ci_name, co_name, ci_pop)
     print(f"\nHello, {formatted_name}!")

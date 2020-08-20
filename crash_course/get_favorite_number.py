@@ -9,3 +9,9 @@
 
 import json
 
+fav_number = input("Enter your favorite number: ")
+
+filename = 'fav_num.json'
+with open(filename, 'w') as f:
+    json.dump(fav_number, f)
+    print(f"Your number has been stored in a safe place!")
