@@ -1,11 +1,11 @@
-# (bash #!/bin/bash) (python #!/usr/bin/python)
+#!/bin/bash
 #===============================================================================
 #
-#          FILE: <script_name>
+#    FILE: <script_name>
 # 
-#         USAGE: <how to run the script>
+#    USAGE: <how to run the script>
 # 
-#   DESCRIPTION: <a short but meaningful purpose of the script>
+#    DESCRIPTION: <a short but meaningful purpose of the script>
 #
 #    Copyright (C) 2020  David Robb
 #
